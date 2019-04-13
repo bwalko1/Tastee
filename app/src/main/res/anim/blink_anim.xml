@@ -1,4 +1,6 @@
-<set xmlns:android="http://schemas.android.com/apk/res/android">
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@anim/blink_anim">
     <alpha
         android:duration="600"
         android:fromAlpha="0.0"
