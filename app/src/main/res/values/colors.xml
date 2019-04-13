@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFEF82</color>
-    <color name="colorPrimaryDark">#FFAA00</color>
-    <color name="colorAccent">#000000</color>
+    <!-- General colors -->
+    <color name="Primary">#FFEF82</color>
+    <color name="PrimaryDark">#FFAA00</color>
+    <color name="Accent">#FFFFFF</color>
+
+    <!-- Control colors -->
+    <color name="Text">#000000</color>
+    <color name="ButtonBackground">@color/Primary</color>
+    <color name="ButtonBackgroundDark">@color/PrimaryDark</color>
 </resources>
