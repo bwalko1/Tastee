@@ -14,21 +14,12 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".activities.landing.LandingActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.benwalko.tastee.activities.menu.MenuActivity">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.benwalko.tastee.activities.menu.MenuActivity" />
     </application>
 </manifest>

@@ -1,31 +1,33 @@
 package com.benwalko.tastee.activities.landing
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.animation.AnimationUtils
 import android.widget.Button
 import com.benwalko.tastee.R
 import com.benwalko.tastee.activities.menu.MenuActivity
+import com.benwalko.tastee.animations.CustomAnimations
 import kotlinx.android.synthetic.main.content_landing.*
 
 class LandingActivity : AppCompatActivity() {
-    var animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
-    var menu = MenuActivity.create()
+    private var customAnimations = CustomAnimations(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_landing)
-        setButtonClickListener(btn_get_tastee, this.menu)
 
-
+        btn_get_tastee.startAnimation(customAnimations.fadeInAnimation())
+        setButtonClickListener(btn_get_tastee)
     }
 
-    private fun setButtonClickListener(button: Button, activity: Activity) {
+    private fun setButtonClickListener(button: Button) {
         button.setOnClickListener {
-            startActivity(Intent(this, activity::class.java))
+            openMenuActivity()
         }
+    }
+
+    private fun openMenuActivity() {
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
     }
 }
