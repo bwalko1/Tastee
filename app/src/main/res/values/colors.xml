@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- General colors -->
+<resources>
+    <!-- Application colors -->
     <color name="Primary">#FFEF82</color>
     <color name="PrimaryDark">#FFAA00</color>
     <color name="Accent">#FFFFFF</color>
+    <color name="TextPrimary">#000000</color>
+    <color name="StatusBar">@color/Primary</color>
 
     <!-- Control colors -->
     <color name="Text">#000000</color>
     <color name="ButtonBackground">@color/Primary</color>
-    <color name="ButtonBackgroundDark" tools:keep="@color/ButtonBackgroundDark">@color/PrimaryDark</color>
+    <color name="ButtonBackgroundDark">@color/PrimaryDark</color>
 </resources>

@@ -6,25 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Landing"
+    tools:context=".activities.landing.LandingActivity"
     tools:showIn="@layout/activity_landing">
 
     <Button
-        android:id="@+id/bigButton"
+        android:id="@+id/btn_get_tastee"
         android:layout_width="0dp"
-        android:layout_height="58dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_control"
-        android:backgroundTint="@color/ButtonBackground"
+        android:backgroundTint="@color/ButtonBackgroundDark"
         android:elevation="0dp"
         android:fontFamily="@font/coiny"
-        android:text="@string/get_tastee"
+        android:text="@string/txt_get_tastee"
         android:textColor="@color/Text"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
