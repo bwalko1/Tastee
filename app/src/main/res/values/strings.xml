@@ -1,5 +1,6 @@
 <resources>
-    <string name="txt_app_name">Tastee</string>
-    <string name="txt_screee">Screee…</string>
-    <string name="txt_get_tastee">Get Tastee!</string>
+    <string name="str_app_name">Tastee</string>
+    <string name="str_screee">Screee…</string>
+    <string name="str_get_tastee">Get Tastee!</string>
+    <string name="str_tastee_bowl">tastee bowl</string>
 </resources>

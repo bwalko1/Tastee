@@ -16,6 +16,8 @@ class LandingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
 
+        iv_tastee_bowl.startAnimation(customAnimations.bounceAnimation())
+
         btn_get_tastee.startAnimation(customAnimations.fadeInAnimation())
         setButtonClickListener(btn_get_tastee)
     }

@@ -22,4 +22,8 @@ class CustomAnimations(private var context: Context) {
     fun blinkAnimation(): Animation {
         return AnimationUtils.loadAnimation(context, R.anim.blink_anim)
     }
+
+    fun slideInTop(): Animation {
+        return AnimationUtils.loadAnimation(context, R.anim.slide_in_top)
+    }
 }
